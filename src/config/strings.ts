@@ -1,0 +1,58 @@
+import type { StringNote } from "@/types/audio";
+
+export const GUITAR_STRINGS: StringNote[] = [
+  {
+    id: "E2",
+    meshName: "String_E2",
+    note: "E2",
+    frequency: 82.41,
+    color: "#C4A35A",
+    amplitude: 0.015,
+    damping: 1.5,
+  },
+  {
+    id: "A2",
+    meshName: "String_A2",
+    note: "A2",
+    frequency: 110.0,
+    color: "#C4A35A",
+    amplitude: 0.013,
+    damping: 1.7,
+  },
+  {
+    id: "D3",
+    meshName: "String_D3",
+    note: "D3",
+    frequency: 146.83,
+    color: "#C4A35A",
+    amplitude: 0.011,
+    damping: 1.9,
+  },
+  {
+    id: "G3",
+    meshName: "String_G3",
+    note: "G3",
+    frequency: 196.0,
+    color: "#E8E8E8",
+    amplitude: 0.009,
+    damping: 2.1,
+  },
+  {
+    id: "B3",
+    meshName: "String_B3",
+    note: "B3",
+    frequency: 246.94,
+    color: "#E8E8E8",
+    amplitude: 0.007,
+    damping: 2.3,
+  },
+  {
+    id: "E4",
+    meshName: "String_E4",
+    note: "E4",
+    frequency: 329.63,
+    color: "#E8E8E8",
+    amplitude: 0.005,
+    damping: 2.5,
+  },
+];
