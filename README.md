@@ -1,8 +1,8 @@
-# Violao 3D — Experiencia Interativa
+# Violão 3D — Experiência Interativa
 
 <div align="center">
 
-Uma experiencia web imersiva que explora a anatomia do violao classico atraves de animacoes 3D, scroll cinematografico e sintese de audio em tempo real.
+Uma experiência web imersiva que explora a anatomia do violão clássico através de animações 3D, scroll cinematográfico e síntese de áudio em tempo real.
 
 **[Ver Demo ao Vivo](https://paulogcamara.github.io/violao-3d/)**
 
@@ -12,74 +12,74 @@ Uma experiencia web imersiva que explora a anatomia do violao classico atraves d
 
 ## Sobre o Projeto
 
-Este projeto e uma experiencia interativa de frontend que combina modelagem 3D procedural, animacoes de scroll cinematograficas e sintese de audio para criar uma jornada educativa e visual pelo violao classico.
+Este projeto é uma experiência interativa de frontend que combina modelagem 3D procedural, animações de scroll cinematográficas e síntese de áudio para criar uma jornada educativa e visual pelo violão clássico.
 
-O site guia o usuario por **12 secoes** que explicam cada corda, escalas musicais, e permitem interacao direta com um braco de violao virtual — tudo renderizado em tempo real no navegador.
+O site guia o usuário por **12 seções** que explicam cada corda, escalas musicais, e permitem interação direta com um braço de violão virtual — tudo renderizado em tempo real no navegador.
 
-### Destaques Tecnicos
+### Destaques Técnicos
 
-- **Modelo 3D 100% procedural** — Violao construido inteiramente com geometria Three.js (LatheGeometry, TubeGeometry, BoxGeometry), sem modelos externos
+- **Modelo 3D 100% procedural** — Violão construído inteiramente com geometria Three.js (LatheGeometry, TubeGeometry, BoxGeometry), sem modelos externos
 - **Texturas de madeira procedurais** — Geradas via Canvas API simulando Spruce, Rosewood, Ebony e Cedar
 - **Materiais fisicamente corretos** — MeshPhysicalMaterial com clearcoat para simular verniz
-- **Sintese de audio Karplus-Strong** — Sons de cordas gerados em tempo real via Web Audio API, sem arquivos de audio pre-gravados
-- **Vibracao de cordas por vertex displacement** — Animacao fisica com onda senoidal fundamental + harmonicos + decaimento exponencial
-- **Camera cinematografica** — Path interpolado via CatmullRomCurve3 com 26 keyframes sincronizados ao scroll
-- **Iluminacao dinamica** — 12 presets de luz que transitam suavemente entre secoes
-- **Fretboard interativo** — 78 posicoes clicaveis (6 cordas x 13 trastes) com audio em tempo real
-- **8 acordes pre-definidos** — Do Maior, Re Maior, Mi Maior, Sol Maior, La Maior, La menor, Mi menor, Re menor
+- **Síntese de áudio Karplus-Strong** — Sons de cordas gerados em tempo real via Web Audio API, sem arquivos de áudio pré-gravados
+- **Vibração de cordas por vertex displacement** — Animação física com onda senoidal fundamental + harmônicos + decaimento exponencial
+- **Câmera cinematográfica** — Path interpolado via CatmullRomCurve3 com 26 keyframes sincronizados ao scroll
+- **Iluminação dinâmica** — 12 presets de luz que transitam suavemente entre seções
+- **Fretboard interativo** — 78 posições clicáveis (6 cordas x 13 trastes) com áudio em tempo real
+- **8 acordes pré-definidos** — Dó Maior, Ré Maior, Mi Maior, Sol Maior, Lá Maior, Lá menor, Mi menor, Ré menor
 
 ---
 
-## Secoes do Site
+## Seções do Site
 
-| # | Secao | Descricao |
+| # | Seção | Descrição |
 |---|-------|-----------|
-| 1 | **Hero** | Revelacao cinematografica do violao com titulo animado |
-| 2 | **O Violao Classico** | Visao geral com stats em cards (6 cordas, 19 trastes, ~45 notas) |
-| 3 | **Mi Grave (E2)** | 6a corda — 82,41 Hz, bordao com revestimento metalico |
-| 4 | **La (A2)** | 5a corda — 110 Hz, referencia universal de afinacao |
-| 5 | **Re (D3)** | 4a corda — 146,83 Hz, equilibrio entre grave e medio |
-| 6 | **Sol (G3)** | 3a corda — 196 Hz, primeira corda de nylon puro |
-| 7 | **Si (B3)** | 2a corda — 246,94 Hz, unico intervalo de terca maior |
-| 8 | **Mi Agudo (E4)** | 1a corda — 329,63 Hz, brilho em melodias e solos |
-| 9 | **Escalas Musicais** | Maior, Menor Natural e Pentatonica com audio |
-| 10 | **Explore o Braco** | Fretboard interativo 6x13 + 8 acordes clicaveis |
-| 11 | **Musica** | Arpejo automatico com citacao de Victor Hugo |
-| 12 | **Creditos** | Tech stack e links |
+| 1 | **Hero** | Revelação cinematográfica do violão com título animado |
+| 2 | **O Violão Clássico** | Visão geral com stats em cards (6 cordas, 19 trastes, ~45 notas) |
+| 3 | **Mi Grave (E2)** | 6ª corda — 82,41 Hz, bordão com revestimento metálico |
+| 4 | **Lá (A2)** | 5ª corda — 110 Hz, referência universal de afinação |
+| 5 | **Ré (D3)** | 4ª corda — 146,83 Hz, equilíbrio entre grave e médio |
+| 6 | **Sol (G3)** | 3ª corda — 196 Hz, primeira corda de nylon puro |
+| 7 | **Si (B3)** | 2ª corda — 246,94 Hz, único intervalo de terça maior |
+| 8 | **Mi Agudo (E4)** | 1ª corda — 329,63 Hz, brilho em melodias e solos |
+| 9 | **Escalas Musicais** | Maior, Menor Natural e Pentatônica com áudio |
+| 10 | **Explore o Braço** | Fretboard interativo 6x13 + 8 acordes clicáveis |
+| 11 | **Música** | Arpejo automático com citação de Victor Hugo |
+| 12 | **Créditos** | Tech stack e links |
 
 ---
 
 ## Tech Stack
 
-| Tecnologia | Funcao |
+| Tecnologia | Função |
 |------------|--------|
 | **React 19** + **TypeScript** | Framework e tipagem |
 | **Vite 8** | Build tool |
 | **Three.js** + **React Three Fiber** | Engine 3D |
 | **@react-three/drei** | Helpers 3D (Environment, Html, useProgress) |
 | **@react-three/postprocessing** | Bloom, Vignette, Chromatic Aberration |
-| **GSAP** + **ScrollTrigger** | Animacoes de scroll cinematograficas |
+| **GSAP** + **ScrollTrigger** | Animações de scroll cinematográficas |
 | **Lenis** | Smooth scroll (2kb) |
 | **Zustand** | Estado global sem re-renders |
-| **Tailwind CSS 4** | Estilizacao utility-first |
-| **Web Audio API** | Sintese Karplus-Strong em tempo real |
+| **Tailwind CSS 4** | Estilização utility-first |
+| **Web Audio API** | Síntese Karplus-Strong em tempo real |
 
 ---
 
 ## Como Executar
 
 ```bash
-# Clonar o repositorio
+# Clonar o repositório
 git clone https://github.com/paulogcamara/violao-3d.git
 cd violao-3d
 
-# Instalar dependencias
+# Instalar dependências
 npm install
 
 # Rodar em desenvolvimento
 npm run dev
 
-# Build de producao
+# Build de produção
 npm run build
 ```
 
@@ -92,10 +92,10 @@ src/
 ├── config/           # Camera path, scroll sections, strings, lighting presets
 ├── stores/           # Zustand store (scroll state)
 ├── lib/              # Audio engine (Karplus-Strong), scroll sync (Lenis+GSAP)
-├── shaders/          # GLSL vertex/fragment shaders para vibracao de cordas
+├── shaders/          # GLSL vertex/fragment shaders para vibração de cordas
 ├── components/
 │   ├── layout/       # Canvas wrapper, scroll container, section wrapper
-│   ├── html/         # 12 secoes de conteudo DOM (hero, strings, scales, etc.)
+│   ├── html/         # 12 seções de conteúdo DOM (hero, strings, scales, etc.)
 │   └── three/        # Componentes R3F (camera, lighting, particles, post-fx)
 │       └── guitar/   # Modelo procedural (body, neck, headstock, bridge, strings)
 └── types/            # TypeScript interfaces
@@ -105,9 +105,9 @@ src/
 
 ```
 Lenis (smooth scroll)
-  → GSAP ScrollTrigger (observa posicao)
+  → GSAP ScrollTrigger (observa posição)
     → Zustand store (progress 0-1)
-      → R3F useFrame (camera, luz, cordas — sem re-renders React)
+      → R3F useFrame (câmera, luz, cordas — sem re-renders React)
 ```
 
 ---
@@ -116,13 +116,13 @@ Lenis (smooth scroll)
 
 - **Target:** 60fps em hardware mid-range
 - **DPR:** Limitado a 1.5x (Canvas)
-- **Zero arquivos de audio:** Tudo sintetizado em tempo real
+- **Zero arquivos de áudio:** Tudo sintetizado em tempo real
 - **Zero modelos externos:** Geometria 100% procedural
 - **Bundle:** ~460kb gzipped (inclui Three.js)
 
 ---
 
-## Licenca
+## Licença
 
 MIT
 
@@ -130,6 +130,6 @@ MIT
 
 <div align="center">
 
-Feito com React Three Fiber, GSAP e paixao por interfaces imersivas.
+Feito com React Three Fiber, GSAP e paixão por interfaces imersivas.
 
 </div>
