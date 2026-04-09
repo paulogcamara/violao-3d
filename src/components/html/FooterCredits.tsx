@@ -34,8 +34,8 @@ export function FooterCredits() {
       </h2>
 
       <p className="text-white/30 text-sm mt-4 font-light max-w-md mx-auto leading-relaxed">
-        Uma experiencia construida com React Three Fiber, GSAP ScrollTrigger,
-        sintese Karplus-Strong e paixao por interfaces imersivas.
+        Uma experiência construída com React Three Fiber, GSAP ScrollTrigger,
+        síntese Karplus-Strong e paixão por interfaces imersivas.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-4 justify-center">
@@ -69,7 +69,7 @@ export function FooterCredits() {
       </div>
 
       <div className="mt-12 text-white/10 text-xs font-light">
-        <p>Modelo 3D procedural &bull; Audio sintetizado via Karplus-Strong &bull; 2026</p>
+        <p>Modelo 3D procedural &bull; Áudio sintetizado via Karplus-Strong &bull; 2026</p>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import type { StringId } from "@/types/audio";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const NOTE_NAMES = ["Do", "Do#", "Re", "Re#", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "La#", "Si"];
+const NOTE_NAMES = ["Dó", "Dó#", "Ré", "Ré#", "Mi", "Fá", "Fá#", "Sol", "Sol#", "Lá", "Lá#", "Si"];
 const OPEN_STRING_MIDI = [40, 45, 50, 55, 59, 64];
 const STRING_LABELS = ["E", "A", "D", "G", "B", "e"];
 
@@ -21,14 +21,14 @@ function midiToNoteName(midi: number): string {
 const FRET_COUNT = 12;
 
 const CHORDS: { name: string; frets: (number | null)[] }[] = [
-  { name: "Do Maior", frets: [null, 3, 2, 0, 1, 0] },
-  { name: "Re Maior", frets: [null, null, 0, 2, 3, 2] },
+  { name: "Dó Maior", frets: [null, 3, 2, 0, 1, 0] },
+  { name: "Ré Maior", frets: [null, null, 0, 2, 3, 2] },
   { name: "Mi Maior", frets: [0, 2, 2, 1, 0, 0] },
   { name: "Sol Maior", frets: [3, 2, 0, 0, 0, 3] },
-  { name: "La Maior", frets: [null, 0, 2, 2, 2, 0] },
-  { name: "La menor", frets: [null, 0, 2, 2, 1, 0] },
+  { name: "Lá Maior", frets: [null, 0, 2, 2, 2, 0] },
+  { name: "Lá menor", frets: [null, 0, 2, 2, 1, 0] },
   { name: "Mi menor", frets: [0, 2, 2, 0, 0, 0] },
-  { name: "Re menor", frets: [null, null, 0, 2, 3, 1] },
+  { name: "Ré menor", frets: [null, null, 0, 2, 3, 1] },
 ];
 
 export function InteractiveSection() {
@@ -94,10 +94,10 @@ export function InteractiveSection() {
       {/* Conteudo na ESQUERDA (violao na direita via camera) */}
       <div className="ml-[4%] md:ml-[6%] lg:ml-[8%] max-w-xl w-full">
         <h2 className="font-serif text-3xl md:text-4xl text-warm-100 tracking-wide">
-          Explore o Braco
+          Explore o Braço
         </h2>
         <p className="mt-2 text-white/35 text-sm font-light">
-          Clique em qualquer posicao para ouvir a nota
+          Clique em qualquer posição para ouvir a nota
         </p>
 
         {/* Fretboard interativo - FONTE MAIOR */}

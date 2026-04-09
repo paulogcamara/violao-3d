@@ -8,11 +8,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SCALES = [
   {
-    name: "Escala Maior (Do Maior)",
-    notes: ["Do", "Re", "Mi", "Fa", "Sol", "La", "Si"],
+    name: "Escala Maior (Dó Maior)",
+    notes: ["Dó", "Ré", "Mi", "Fá", "Sol", "Lá", "Si"],
     pattern: "T T ST T T T ST",
     description:
-      "A escala maior e a base da musica ocidental. Seu padrao de tons e semitons cria uma sonoridade alegre e brilhante.",
+      "A escala maior é a base da música ocidental. Seu padrão de tons e semitons cria uma sonoridade alegre e brilhante.",
     playData: [
       { note: "E4" as StringId, freq: 329.63 },
       { note: "B3" as StringId, freq: 293.66 },
@@ -24,11 +24,11 @@ const SCALES = [
     ],
   },
   {
-    name: "Escala Menor Natural (La menor)",
-    notes: ["La", "Si", "Do", "Re", "Mi", "Fa", "Sol"],
+    name: "Escala Menor Natural (Lá menor)",
+    notes: ["Lá", "Si", "Dó", "Ré", "Mi", "Fá", "Sol"],
     pattern: "T ST T T ST T T",
     description:
-      "A relativa menor de Do Maior. Compartilha as mesmas notas, mas comecando de La, criando um carater melancolico e introspectivo.",
+      "A relativa menor de Dó Maior. Compartilha as mesmas notas, mas começando de Lá, criando um caráter melancólico e introspectivo.",
     playData: [
       { note: "A2" as StringId, freq: 220.0 },
       { note: "D3" as StringId, freq: 246.94 },
@@ -40,11 +40,11 @@ const SCALES = [
     ],
   },
   {
-    name: "Escala Pentatonica",
-    notes: ["La", "Do", "Re", "Mi", "Sol"],
+    name: "Escala Pentatônica",
+    notes: ["Lá", "Dó", "Ré", "Mi", "Sol"],
     pattern: "1.5T T T 1.5T T",
     description:
-      "Com apenas 5 notas, a pentatonica e a escala mais intuitiva. Presente em blues, rock, musica oriental e folclore brasileiro.",
+      "Com apenas 5 notas, a pentatônica é a escala mais intuitiva. Presente em blues, rock, música oriental e folclore brasileiro.",
     playData: [
       { note: "A2" as StringId, freq: 220.0 },
       { note: "D3" as StringId, freq: 261.63 },
@@ -100,7 +100,7 @@ export function ScalesSection() {
           Escalas Musicais
         </h2>
         <p className="mt-2 text-white/35 text-sm font-light">
-          Padroes de notas que formam a base de toda melodia e harmonia
+          Padrões de notas que formam a base de toda melodia e harmonia
         </p>
 
         <div className="mt-6 space-y-4">

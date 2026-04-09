@@ -62,12 +62,12 @@ export function MusicOverlay() {
       {/* Texto na ESQUERDA (violao na direita via camera) */}
       <div className="ml-[6%] md:ml-[8%] lg:ml-[10%] max-w-md">
         <div className="text-warm-400/20 text-[10px] tracking-[0.5em] uppercase mb-5">
-          Sinta a musica
+          Sinta a música
         </div>
 
         <blockquote className="font-serif text-warm-100/80 text-2xl md:text-3xl italic leading-relaxed">
-          "A musica expressa aquilo que nao pode ser dito e sobre o qual e
-          impossivel permanecer em silencio."
+          "A música expressa aquilo que não pode ser dito e sobre o qual é
+          impossível permanecer em silêncio."
         </blockquote>
         <cite className="block mt-5 text-warm-300/35 text-sm font-light tracking-wider not-italic">
           &mdash; Victor Hugo
@@ -76,8 +76,8 @@ export function MusicOverlay() {
         <div className="mt-8 w-20 h-px bg-gradient-to-r from-warm-400/20 to-transparent" />
 
         <p className="mt-8 text-white/30 text-sm font-light leading-relaxed max-w-sm">
-          O violao classico e capaz de reproduzir melodia, harmonia e ritmo
-          simultaneamente — uma orquestra nas maos de um so musico.
+          O violão clássico é capaz de reproduzir melodia, harmonia e ritmo
+          simultaneamente — uma orquestra nas mãos de um só músico.
         </p>
       </div>
     </div>

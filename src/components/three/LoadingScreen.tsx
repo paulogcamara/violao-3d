@@ -7,7 +7,7 @@ export function LoadingScreen() {
     <Html center>
       <div className="flex flex-col items-center gap-6">
         <div className="text-warm-300 font-serif text-2xl tracking-widest">
-          VIOLAO 3D
+          VIOLÃO 3D
         </div>
 
         <div className="w-48 h-0.5 bg-white/10 rounded-full overflow-hidden">
