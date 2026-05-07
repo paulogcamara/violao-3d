@@ -6,11 +6,16 @@ dist-ssr
 .env.*
 !.env.example
 
-# Editor
+# Editor / tooling
+.claude/
 .vscode/*
 !.vscode/extensions.json
+.idea/
 *.swp
 *.swo
+
+# TypeScript build cache
+*.tsbuildinfo
 
 # OS
 .DS_Store
