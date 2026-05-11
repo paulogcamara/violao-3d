@@ -12,4 +12,20 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  build: {
+    target: "es2020",
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (!id.includes("node_modules")) return;
+          if (id.includes("/three/")) return "three";
+          if (id.includes("/@react-three/")) return "r3f";
+          if (id.includes("/postprocessing/")) return "r3f";
+          if (id.includes("/gsap/") || id.includes("/lenis/")) return "motion";
+          if (id.includes("/react/") || id.includes("/react-dom/") || id.includes("/scheduler/")) return "react";
+        },
+      },
+    },
+  },
 });

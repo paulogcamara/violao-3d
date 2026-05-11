@@ -4,8 +4,10 @@ import { SceneLighting } from "./SceneLighting";
 import { GuitarModel } from "./GuitarModel";
 import { ParticleSystem } from "./ParticleSystem";
 import { PostProcessing } from "./PostProcessing";
+import { shouldEnablePostFX } from "@/lib/device-tier";
 
 export function GuitarScene() {
+  const postFX = shouldEnablePostFX();
   return (
     <>
       <CameraRig />
@@ -13,7 +15,7 @@ export function GuitarScene() {
       <Environment preset="night" />
       <GuitarModel />
       <ParticleSystem />
-      <PostProcessing />
+      {postFX && <PostProcessing />}
     </>
   );
 }
