@@ -94,10 +94,11 @@ export function InteractiveSection() {
       {/* Conteudo na ESQUERDA (violao na direita via camera) */}
       <div className="ml-[4%] md:ml-[6%] lg:ml-[8%] max-w-xl w-full">
         <h2 className="font-serif text-3xl md:text-4xl text-warm-100 tracking-wide">
-          Explore o Braço
+          Agora, toque
         </h2>
-        <p className="mt-2 text-white/35 text-sm font-light">
-          Clique em qualquer posição para ouvir a nota
+        <p className="mt-2 text-white/45 text-sm md:text-base font-light leading-relaxed max-w-md">
+          Você já ouviu as seis vozes. Agora elas são suas: toque qualquer
+          nota, monte qualquer acorde.
         </p>
 
         {/* Fretboard interativo - FONTE MAIOR */}

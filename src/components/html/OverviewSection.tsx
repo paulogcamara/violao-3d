@@ -29,39 +29,30 @@ export function OverviewSection() {
     <div ref={containerRef} className="absolute inset-0 flex items-center opacity-0">
       {/* Texto na ESQUERDA */}
       <div className="ml-[6%] md:ml-[8%] lg:ml-[10%] max-w-lg">
-        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-warm-100 tracking-wide leading-tight">
-          O Violão
-          <br />
-          Clássico
-        </h2>
-
-        <p className="mt-5 text-white/45 text-sm md:text-base leading-relaxed font-light max-w-md">
-          Seis cordas. Dezenove trastes. Séculos de história.
-          O violão clássico é um dos instrumentos mais versáteis do mundo,
-          capaz de expressar desde a melancolia do fado português
-          até a complexidade de uma fuga de Bach.
-        </p>
-
-        {/* Stats em boxes */}
-        <div className="mt-8 grid grid-cols-3 gap-3">
-          <div className="bg-white/[0.04] border border-white/[0.08] rounded-xl p-4 text-center backdrop-blur-sm">
-            <div className="text-warm-400 font-serif text-3xl">6</div>
-            <div className="text-white/40 text-[11px] mt-1 tracking-wider">Cordas</div>
-          </div>
-          <div className="bg-white/[0.04] border border-white/[0.08] rounded-xl p-4 text-center backdrop-blur-sm">
-            <div className="text-warm-400 font-serif text-3xl">19</div>
-            <div className="text-white/40 text-[11px] mt-1 tracking-wider">Trastes</div>
-          </div>
-          <div className="bg-white/[0.04] border border-white/[0.08] rounded-xl p-4 text-center backdrop-blur-sm">
-            <div className="text-warm-400 font-serif text-3xl">~45</div>
-            <div className="text-white/40 text-[11px] mt-1 tracking-wider">Notas únicas</div>
-          </div>
+        <div className="text-warm-400/30 text-[10px] tracking-[0.5em] uppercase mb-5 font-light">
+          Antes da primeira nota
         </div>
 
-        {/* Afinacao padrao - box destacada com shadow */}
-        <div className="mt-4 bg-warm-400/[0.06] border border-warm-400/15 rounded-xl p-5 shadow-lg shadow-warm-400/5 backdrop-blur-sm">
-          <div className="text-warm-300/60 text-[10px] tracking-[0.3em] uppercase mb-2">
-            Afinação padrão
+        <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl text-warm-100 tracking-wide leading-tight">
+          A Origem
+          <br />
+          do Som
+        </h2>
+
+        <p className="mt-5 text-warm-100/70 text-base md:text-lg leading-relaxed font-light max-w-md">
+          Um violão é só uma caixa de madeira e ar. Mas quando uma corda
+          vibra, a madeira respira junto, e o ar preso lá dentro devolve o
+          som ao mundo — mais cheio, mais quente, mais vivo.
+        </p>
+        <p className="mt-4 text-white/45 text-sm md:text-base leading-relaxed font-light max-w-md">
+          Antes de ser música, o som é isso: matéria tremendo. E esse tremor
+          ganha voz em seis cordas, da mais grave à mais aguda.
+        </p>
+
+        {/* As seis vozes, da grave à aguda — ponte para as próximas seções */}
+        <div className="mt-8 bg-warm-400/[0.06] border border-warm-400/15 rounded-xl p-5 shadow-lg shadow-warm-400/5 backdrop-blur-sm">
+          <div className="text-warm-300/60 text-[10px] tracking-[0.3em] uppercase mb-3">
+            As seis vozes
           </div>
           <div className="flex gap-3 justify-center">
             {["E2", "A2", "D3", "G3", "B3", "E4"].map((note) => (

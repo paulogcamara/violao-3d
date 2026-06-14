@@ -39,10 +39,10 @@ export function ScrollContainer() {
             name={data.name}
             number={data.number}
             note={data.note}
-            frequency={data.frequency}
-            type={data.type}
-            description={data.description}
-            curiosity={data.curiosity}
+            role={data.role}
+            emotion={data.emotion}
+            soul={data.soul}
+            music={data.music}
             color={data.color}
             freq={GUITAR_STRINGS[i].frequency}
           />

@@ -12,7 +12,7 @@ const SCALES = [
     notes: ["Dó", "Ré", "Mi", "Fá", "Sol", "Lá", "Si"],
     pattern: "T T ST T T T ST",
     description:
-      "A escala maior é a base da música ocidental. Seu padrão de tons e semitons cria uma sonoridade alegre e brilhante.",
+      "Soa como luz: aberta, alegre, resolvida. É o som de quando tudo dá certo — a trilha de um reencontro.",
     playData: [
       { note: "E4" as StringId, freq: 329.63 },
       { note: "B3" as StringId, freq: 293.66 },
@@ -28,7 +28,7 @@ const SCALES = [
     notes: ["Lá", "Si", "Dó", "Ré", "Mi", "Fá", "Sol"],
     pattern: "T ST T T ST T T",
     description:
-      "A relativa menor de Dó Maior. Compartilha as mesmas notas, mas começando de Lá, criando um caráter melancólico e introspectivo.",
+      "As mesmas notas, começando de outro lugar — e tudo muda. É a saudade feita som: noturna, introspectiva, de quem lembra.",
     playData: [
       { note: "A2" as StringId, freq: 220.0 },
       { note: "D3" as StringId, freq: 246.94 },
@@ -44,7 +44,7 @@ const SCALES = [
     notes: ["Lá", "Dó", "Ré", "Mi", "Sol"],
     pattern: "1.5T T T 1.5T T",
     description:
-      "Com apenas 5 notas, a pentatônica é a escala mais intuitiva. Presente em blues, rock, música oriental e folclore brasileiro.",
+      "Cinco notas que nunca soam erradas. É a escala do instinto: a que uma criança acha sozinha, e a que atravessa o blues, o rock e o sertão.",
     playData: [
       { note: "A2" as StringId, freq: 220.0 },
       { note: "D3" as StringId, freq: 261.63 },
@@ -96,11 +96,13 @@ export function ScalesSection() {
     >
       {/* Conteudo na ESQUERDA (violao na direita via camera) */}
       <div className="ml-[6%] md:ml-[8%] lg:ml-[10%] max-w-md">
-        <h2 className="font-serif text-3xl md:text-4xl text-warm-100 tracking-wide">
-          Escalas Musicais
+        <h2 className="font-serif text-3xl md:text-4xl text-warm-100 tracking-wide leading-tight">
+          Quando as Vozes
+          <br />
+          se Encontram
         </h2>
-        <p className="mt-2 text-white/35 text-sm font-light">
-          Padrões de notas que formam a base de toda melodia e harmonia
+        <p className="mt-3 text-white/45 text-sm md:text-base font-light leading-relaxed max-w-sm">
+          Sozinha, cada voz diz pouco. Juntas, em escala, elas viram sentimento.
         </p>
 
         <div className="mt-6 space-y-4">
@@ -135,11 +137,7 @@ export function ScalesSection() {
                 ))}
               </div>
 
-              <div className="mt-2 text-[10px] text-white/20 font-mono tracking-wider">
-                {scale.pattern}
-              </div>
-
-              <p className="mt-3 text-white/35 text-xs leading-relaxed font-light">
+              <p className="mt-3 text-white/45 text-xs md:text-sm leading-relaxed font-light">
                 {scale.description}
               </p>
             </div>

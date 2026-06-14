@@ -11,13 +11,13 @@ export function CanvasWrapper() {
   const tier = getDeviceTier();
   const maxDpr = getMaxDpr();
   return (
-    <div className="fixed inset-0 z-0">
+    <div className="fixed inset-0 z-[1]">
       <Canvas
         dpr={[1, maxDpr]}
         camera={{ fov: 45, near: 0.1, far: 100, position: [0, 1, 8] }}
         gl={{
           antialias: tier !== "low",
-          alpha: false,
+          alpha: true,
           powerPreference: "high-performance",
         }}
       >

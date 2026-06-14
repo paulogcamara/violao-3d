@@ -59,7 +59,7 @@ export function HeroContent() {
       {/* Texto na ESQUERDA */}
       <div className="ml-[6%] md:ml-[8%] lg:ml-[10%] max-w-lg">
         <div className="text-warm-400/30 text-xs tracking-[0.5em] uppercase mb-5 font-light">
-          Uma experiência interativa
+          Seis cordas · seis vozes
         </div>
 
         <h1
@@ -75,7 +75,7 @@ export function HeroContent() {
           ref={subtitleRef}
           className="mt-6 text-white/50 text-base md:text-lg font-light tracking-wider opacity-0 max-w-sm"
         >
-          Descubra cada corda, cada nota, cada vibração do violão clássico
+          Cada corda de um violão é uma voz. Esta é a história das seis.
         </p>
 
         <div className="mt-8 w-16 h-px bg-warm-400/20" />

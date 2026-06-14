@@ -30,11 +30,12 @@ export function FooterCredits() {
       <div className="w-20 h-px bg-gradient-to-r from-transparent via-warm-400/20 to-transparent mx-auto mb-8" />
 
       <h2 className="font-serif text-warm-200 text-3xl md:text-4xl tracking-wide">
-        Obrigado por explorar
+        Obrigado por ouvir
       </h2>
 
-      <p className="text-white/30 text-sm mt-4 font-light max-w-md mx-auto leading-relaxed">
-        Uma experiência construída com React Three Fiber, GSAP ScrollTrigger,
+      <p className="text-white/40 text-sm md:text-base mt-4 font-light max-w-md mx-auto leading-relaxed">
+        Seis vozes, um instrumento, nenhum arquivo: o violão, o som e cada
+        nota foram construídos do zero, em código, com React Three Fiber, GSAP,
         síntese Karplus-Strong e paixão por interfaces imersivas.
       </p>
 
@@ -57,13 +58,13 @@ export function FooterCredits() {
       </div>
 
       <div className="flex gap-6 justify-center mt-10">
-        <a href="#" className="px-6 py-2.5 border border-warm-400/30 text-warm-300 rounded-full text-sm tracking-wider hover:bg-warm-400/10 transition-colors pointer-events-auto">
+        <a href="https://github.com/paulogcamara" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 border border-warm-400/30 text-warm-300 rounded-full text-sm tracking-wider hover:bg-warm-400/10 transition-colors pointer-events-auto">
           GitHub
         </a>
-        <a href="#" className="px-6 py-2.5 border border-warm-400/30 text-warm-300 rounded-full text-sm tracking-wider hover:bg-warm-400/10 transition-colors pointer-events-auto">
+        <a href="https://linkedin.com/in/paulo-gabriel-c%C3%A2mara-406659339" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 border border-warm-400/30 text-warm-300 rounded-full text-sm tracking-wider hover:bg-warm-400/10 transition-colors pointer-events-auto">
           LinkedIn
         </a>
-        <a href="#" className="px-6 py-2.5 bg-warm-400/20 text-warm-200 rounded-full text-sm tracking-wider hover:bg-warm-400/30 transition-colors pointer-events-auto">
+        <a href="https://paulocamara.pages.dev" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 bg-warm-400/20 text-warm-200 rounded-full text-sm tracking-wider hover:bg-warm-400/30 transition-colors pointer-events-auto">
           Portfolio
         </a>
       </div>

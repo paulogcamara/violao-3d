@@ -12,10 +12,10 @@ interface StringSectionProps {
   name: string;
   number: string;
   note: string;
-  frequency: string;
-  type: string;
-  description: string;
-  curiosity: string;
+  role: string;
+  emotion: string;
+  soul: string;
+  music: string;
   color: string;
   freq: number;
 }
@@ -26,10 +26,10 @@ export function StringSection({
   name,
   number,
   note,
-  frequency,
-  type,
-  description,
-  curiosity,
+  role,
+  emotion,
+  soul,
+  music,
   color,
   freq,
 }: StringSectionProps) {
@@ -37,7 +37,6 @@ export function StringSection({
   const hasPlayedRef = useRef(false);
 
   // Par = violao na DIREITA, texto na ESQUERDA
-  // Impar = violao na ESQUERDA, texto na DIREITA
   const isRight = stringIndex % 2 === 0;
 
   const playNote = useCallback(async () => {
@@ -59,6 +58,7 @@ export function StringSection({
         onEnter: () => {
           if (!hasPlayedRef.current) {
             hasPlayedRef.current = true;
+            // a voz "fala" sozinha ao entrar
             setTimeout(() => playNote(), 500);
           }
         },
@@ -84,8 +84,6 @@ export function StringSection({
     return () => ctx.revert();
   }, [sectionId, playNote, isRight]);
 
-  const isBass = stringIndex < 3;
-
   return (
     <div
       ref={containerRef}
@@ -100,68 +98,52 @@ export function StringSection({
             : "mr-[6%] md:mr-[8%] lg:mr-[10%]"
         }`}
       >
-        {/* Numero grande da corda */}
+        {/* Número da corda, fantasma ao fundo */}
         <div
-          className="text-8xl md:text-9xl font-serif font-bold opacity-[0.07] leading-none"
+          className="text-8xl md:text-9xl font-serif font-bold opacity-[0.08] leading-none"
           style={{ color }}
         >
           {stringIndex + 1}
         </div>
 
-        {/* Nome e nota */}
-        <div className="-mt-6 flex items-baseline gap-4">
-          <h2 className="font-serif text-3xl md:text-4xl text-warm-100 tracking-wide">
-            {name}
-          </h2>
-          <span
-            className="text-xs font-mono tracking-widest px-3 py-1 rounded-full border"
-            style={{ borderColor: color + "40", color }}
-          >
-            {note}
-          </span>
-        </div>
-
-        {/* Info tecnica em mini boxes */}
-        <div className="mt-4 flex flex-wrap gap-2">
-          <span className="text-[11px] text-white/35 tracking-wider bg-white/[0.03] border border-white/[0.06] rounded-lg px-3 py-1.5">
-            {number}
-          </span>
-          <span className="text-[11px] text-white/35 tracking-wider bg-white/[0.03] border border-white/[0.06] rounded-lg px-3 py-1.5">
-            {frequency}
-          </span>
-        </div>
-
-        {/* Tipo da corda */}
-        <div
-          className="mt-3 text-sm font-light px-4 py-2 rounded-lg inline-block"
-          style={{
-            backgroundColor: isBass ? "#C4A35A12" : "#E8E0D012",
-            color: isBass ? "#C4A35A" : "#E8E0D0",
-            border: `1px solid ${isBass ? "#C4A35A15" : "#E8E0D015"}`,
-          }}
+        {/* O papel da voz — o que ela É */}
+        <h2
+          className="-mt-8 font-serif text-4xl md:text-5xl tracking-wide leading-[1.05]"
+          style={{ color }}
         >
-          {type}
-        </div>
+          {role}
+        </h2>
 
-        {/* Descricao */}
-        <p className="mt-5 text-white/55 text-sm leading-relaxed font-light">
-          {description}
+        {/* Identidade: nome · corda · nota */}
+        <p className="mt-3 font-mono text-[11px] tracking-[0.25em] uppercase text-white/40">
+          {name} · {number} · {note}
         </p>
 
-        {/* Curiosidade em box */}
-        <div
-          className="mt-4 border-l-2 pl-4 bg-white/[0.02] rounded-r-lg py-3 pr-4"
-          style={{ borderColor: color + "25" }}
+        {/* Emoção */}
+        <p
+          className="mt-2 font-mono text-[11px] tracking-[0.3em] uppercase"
+          style={{ color: color + "cc" }}
         >
-          <p className="text-white/35 text-xs leading-relaxed italic">
-            {curiosity}
-          </p>
-        </div>
+          {emotion}
+        </p>
 
-        {/* Botao tocar */}
+        {/* A alma — o texto principal */}
+        <p className="mt-6 text-warm-100/75 text-base md:text-lg leading-relaxed font-light">
+          {soul}
+        </p>
+
+        {/* Onde ela vive — referência cultural, em itálico */}
+        <p
+          className="mt-5 border-l-2 pl-4 text-white/45 text-sm md:text-base italic leading-relaxed font-light"
+          style={{ borderColor: color + "40" }}
+        >
+          {music}
+        </p>
+
+        {/* Ouvir a voz */}
         <button
           onClick={playNote}
-          className="mt-6 flex items-center gap-2 px-5 py-2.5 rounded-full text-sm tracking-wider transition-all duration-300 hover:scale-105 pointer-events-auto cursor-pointer"
+          className="mt-7 flex items-center gap-2 px-5 py-2.5 rounded-full text-sm tracking-wider transition-all duration-300 hover:scale-105 pointer-events-auto cursor-pointer"
           style={{
             backgroundColor: color + "18",
             color,
@@ -171,7 +153,7 @@ export function StringSection({
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
             <polygon points="5,3 19,12 5,21" />
           </svg>
-          Ouvir {note}
+          Ouvir a voz
         </button>
       </div>
     </div>

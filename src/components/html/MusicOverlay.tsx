@@ -75,9 +75,10 @@ export function MusicOverlay() {
 
         <div className="mt-8 w-20 h-px bg-gradient-to-r from-warm-400/20 to-transparent" />
 
-        <p className="mt-8 text-white/30 text-sm font-light leading-relaxed max-w-sm">
-          O violão clássico é capaz de reproduzir melodia, harmonia e ritmo
-          simultaneamente — uma orquestra nas mãos de um só músico.
+        <p className="mt-8 text-white/40 text-sm md:text-base font-light leading-relaxed max-w-sm">
+          Seis vozes, dez dedos, uma caixa de madeira. O violão é a orquestra
+          mais íntima que existe: melodia, harmonia e ritmo ao mesmo tempo, nas
+          mãos de uma só pessoa.
         </p>
       </div>
     </div>

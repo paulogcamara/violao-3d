@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { AtmosphereBackdrop } from "@/components/layout/AtmosphereBackdrop";
 import { CanvasWrapper } from "@/components/layout/CanvasWrapper";
 import { ScrollContainer } from "@/components/layout/ScrollContainer";
 import { initLenis, destroyLenis } from "@/lib/scroll-sync";
@@ -50,6 +51,7 @@ export default function App() {
 
   return (
     <>
+      <AtmosphereBackdrop />
       <CanvasWrapper />
       <ScrollContainer />
     </>
